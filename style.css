@@ -1,0 +1,123 @@
+body {
+    /* mobile layout  */
+    background-color: rgb(235, 107, 38);
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'footer'
+    ;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+ 
+@media (min-width: 40em) {
+    body {
+        /*     grid template areas
+        Specifies named grid areas, which are not associated with any particular grid item,
+     but can be referenced from the grid-placement properties.*/
+        grid-template-areas:
+            'nav header header'
+            'nav main main'
+            'nav footer footer'
+        ;
+    }
+ 
+}
+ 
+/* named areas */
+header {
+    grid-area: header;
+    background-color: #0a0808ec;
+}
+ 
+nav {
+    grid-area: nav;
+}
+ 
+main {
+    grid-area: main;
+    
+}
+ 
+footer {
+    grid-area: footer;
+}
+ 
+/* show… */
+body {
+    background: var(--dark-purple);
+    background-color: #3b0f0676;
+    
+}
+ 
+header,
+nav,
+main,
+footer {
+    background: var(--background);
+    padding: 1em;
+    border: solid red 2px;
+}
+ 
+h1 {
+    font-family: var(--zilla);
+}
+ 
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+/* ............ */
+#proj1{
+    font-size: 24px;
+}
+ 
+#ifrm1{
+    height: 600px; width: 600px;
+    border-color: blue;
+    /* frameborder="10" height="600px" width="600px" */
+}
+#ifrm_words{
+    height: 600px; width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+#ifrm_words_2{
+    
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+#text_box{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#ifrm2{
+    height: 600px; width: 1200px;
+    border-color: blue;
+    margin-bottom: 25px;
+    /* frameborder="10" height="600px" width="600px" */
+}
+
+.brouser_link {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #54281f77;
+}
+
+.brouser_link:hover {
+    cursor: pointer;
+}
+
+/* ............ */
